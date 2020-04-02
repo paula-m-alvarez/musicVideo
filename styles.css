@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    background: linear-gradient(#b80d57, #ffd868);
+    font-family: 'Muli', sans-serif;
+}
+
+/* NAVBAR */
+
+nav {
+    width: 100%;
+    height: 80px;
+    /* background-color: #b80d57; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 70px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.menu {
+    margin-right: 20px;
+}
+
+.menu:hover ul, ul:hover {
+    display: block;
+}
+
+.menu-profile {
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-profile img {
+    margin-right: 8px;
+    width: 40px;
+}
+
+.menu-profile p {
+    margin: 0px;
+    color: white;
+}
+
+.menu ul {
+    display: none;
+    list-style: none;
+    padding: 0px;
+    position: absolute;
+    width: 100px;
+    text-align: right;
+    margin: 0px 0px 0px -10px;
+}
+
+.menu li {
+    margin: 10px 0px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+   text-decoration: underline;
+}
+
+/* NAVBAR END */
+
+/* SEARCH */
+
+.search {
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-title {
+    color: white;
+    font-size: 25px;
+}
+
+.input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    height: 50px;
+    padding: 0px 20px;
+    width: 70%;
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+}
+
+/* SEARCH END */
+
+.categories-title {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    padding-left: 30px;
+    width: 100%;
+
+}
+
+/* CAROUSEL */
+.carousel {
+    width: 100%;
+    overflow: scroll;
+    padding: 30px;
+    position: relative;
+}
+
+.carousel-container {
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+}
+
+.carousel-item {
+    width: 230px;
+    height: 290px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+    position: relative;
+}
+
+.carousel-item:hover ~ .carousel-item {
+    transform: translate3d(100px, 0, 0);
+}
+
+.carousel-container:hover .carousel-item {
+    opacity: 0.3;
+}
+
+.carousel-container:hover .carousel-item:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.carousel-item-img {
+    width: 230px;
+    height: 290px;
+    object-fit: cover;
+}
+
+.carousel-item-details img {
+    width: 30px;
+    height: 30px;
+}
+
+.carousel-item-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    background:linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    font-size: 10px;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding:10px;
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.carousel-item-details:hover {
+    opacity: 1;
+}
+.carousel-item-details-title {
+    margin: 0px;
+    color:#ffffff;
+    font-size: 14px;
+    font-family: 'Muli', sans-serif;
+}
+.carousel-item-details-subtitle {
+    color:#ffffff;
+    font-size: 10px;
+    font-family: 'Muli', sans-serif;
+}
+
+/* CAROSEUL END */
+
+.footer {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+.footer a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Muli', sans-serif;
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
